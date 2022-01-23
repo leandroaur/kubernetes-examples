@@ -24,7 +24,7 @@ jobs:
           echo test, and deploy your project.
 
   CD:
-    needs: [CI]
+#    needs: [CI]
     runs-on: ubuntu-latest
     
     steps:
