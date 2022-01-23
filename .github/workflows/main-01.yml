@@ -37,16 +37,16 @@ jobs:
           version: 1.14.0      
             
       
-      - name: Kubernetes Set Context
-        uses: Azure/k8s-set-context@v2
-        with:
-          method: kubeconfig
-          kubeconfig: ${{ secrets.K8S_CONFIG_PI }}
-
-      - name: Deploy to Kubernetes cluster
-        uses: Azure/k8s-deploy@v1.5
-        with:
-          images: wordpress:4.8-apache
-          manifests: |
-            pv/wordpress-deployment.yaml
-            pv/mysql-deployment.yaml
+ #     - name: Kubernetes Set Context
+ #       uses: Azure/k8s-set-context@v2
+ #       with:
+ #         method: kubeconfig
+ #         kubeconfig: ${{ secrets.K8S_CONFIG_PI }}
+#
+ #     - name: Deploy to Kubernetes cluster
+ #       uses: Azure/k8s-deploy@v1.5
+ #       with:
+ #         images: wordpress:4.8-apache
+ #         manifests: |
+ #           pv/wordpress-deployment.yaml
+ #           pv/mysql-deployment.yaml
