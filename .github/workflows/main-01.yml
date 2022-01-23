@@ -48,7 +48,7 @@ jobs:
         with:
           images: wordpress:4.8-apache
           manifests: |
-            pv/kustomization.yaml
+            pv/mysql-deployment.yaml
 
 #      - name: 'Kustomize Build'
 #        uses: karancode/kustomize-github-action@master
