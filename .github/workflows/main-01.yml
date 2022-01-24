@@ -43,13 +43,13 @@ jobs:
           method: kubeconfig
           kubeconfig: ${{ secrets.K8S_CONFIG_PI }}
 
-      - name: Deploy to Kubernetes cluster
-        uses: Azure/k8s-deploy@v1.5
-        with:
-          images: wordpress:4.8-apache
-          manifests: |
-            pv/mysql-deployment.yaml
-            pv/wordpress-deployment.yaml
+#      - name: Deploy to Kubernetes cluster
+#        uses: Azure/k8s-deploy@v1.5
+#        with:
+#          images: wordpress:4.8-apache
+#          manifests: |
+#            pv/mysql-deployment.yaml
+#            pv/wordpress-deployment.yaml
             
 
 #      - name: 'Kustomize Build'
