@@ -49,7 +49,7 @@ jobs:
           
       - name: Execute apply -k
         run: |-
-          kubectl apply -k pv./
+          kubectl apply -k pv/.
 
 
 
