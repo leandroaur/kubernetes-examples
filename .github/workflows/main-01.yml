@@ -45,8 +45,6 @@ jobs:
 
       - name: Trigger deploy
         uses: phamquyhai/kubernetes-action@master
-        env:
-          KUBE_CONFIG_DATA: ${{ secrets.K8S_CONFIG_PI }}
         with:
           args: apply -k pv./
 
