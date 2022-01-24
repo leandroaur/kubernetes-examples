@@ -48,7 +48,7 @@ jobs:
         env:
           KUBE_CONFIG_DATA: ${{ secrets.K8S_CONFIG_PI }}
         with:
-          args: apply -k /pv./
+          args: apply -k pv./
 
 #      - name: Deploy to Kubernetes cluster
 #        uses: Azure/k8s-deploy@v1.5
