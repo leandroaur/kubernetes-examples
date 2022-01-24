@@ -28,7 +28,7 @@ jobs:
 #            leandroaurelio/conversao-temperatura:latest
 #            leandroaurelio/conversao-temperatura:v${{ github.run_number }}
   CD:
-#    needs: [CI]
+    needs: [CI]
     runs-on: ubuntu-latest
     
     steps:
