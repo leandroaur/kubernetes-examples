@@ -50,7 +50,7 @@ jobs:
       - name: Trigger deploy
         uses: phamquyhai/kubernetes-action@master
         with:
-          args: apply -k pv./
+          args: apply -k pv/kustomization.yaml
 
 #      - name: Deploy to Kubernetes cluster
 #        uses: Azure/k8s-deploy@v1.5
