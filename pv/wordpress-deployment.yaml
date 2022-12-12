@@ -39,10 +39,11 @@ metadata:
     app: wordpress
 spec:
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
+  storageClassName: local-path
   resources:
     requests:
-      storage: 20Gi
+      storage: 2Gi
 ---
 apiVersion: apps/v1
 kind: Deployment

@@ -20,7 +20,8 @@ metadata:
     app: wordpress
 spec:
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
+  storageClassName: local-path
   resources:
     requests:
       storage: 20Gi
